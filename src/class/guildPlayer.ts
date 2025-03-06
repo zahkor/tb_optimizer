@@ -1,4 +1,4 @@
-export class GuildPlayer {
+ class GuildPlayer {
     data: PlayerProfile = new PlayerProfile();
     units: Unit[] = [];
 
@@ -7,7 +7,7 @@ export class GuildPlayer {
     }
 }
 
-export class PlayerProfile {
+ class PlayerProfile {
     allyCode!: number;
     arenaLeaderBaseId!: string;
     arenaRank!: number;
@@ -56,7 +56,7 @@ export class PlayerProfile {
     }
 }
 
-export class Arena {
+ class Arena {
     rank!: number;
     leader!: string;
     members!: string[];
@@ -66,7 +66,7 @@ export class Arena {
     }
 }
 
-export class FleetArena {
+ class FleetArena {
     rank!: number;
     leader!: string;
     members!: string[];
@@ -77,7 +77,7 @@ export class FleetArena {
     }
 }
 
-export class Unit {
+ class Unit {
     data!: UnitData;
 
     constructor(init?: Partial<Unit>) {
@@ -85,7 +85,7 @@ export class Unit {
     }
 }
 
-export class UnitData {
+ class UnitData {
     base_id!: string;
     name!: string;
     gearLevel!: number;
@@ -110,7 +110,7 @@ export class UnitData {
     }
 }
 
-export class GearItem {
+ class GearItem {
     slot!: number;
     isObtained!: boolean;
     baseId!: string;
@@ -120,7 +120,7 @@ export class GearItem {
     }
 }
 
-export class Ability {
+ class Ability {
     id!: string;
     abilityTier!: number;
     isOmega!: boolean;

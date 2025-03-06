@@ -1,4 +1,4 @@
-export class Guild {
+class Guild {
     data: GuildData = new GuildData();
 
     constructor(init?: Partial<Guild>) {
@@ -6,7 +6,7 @@ export class Guild {
     }
 }
 
-export class GuildData {
+class GuildData {
     guild_id!: string;
     name!: string;
     external_message!: string;
@@ -29,7 +29,7 @@ export class GuildData {
     }
 }
 
-export class GuildMember {
+ class GuildMember {
     galactic_power!: number;
     guild_join_time!: string;
     lifetime_season_score!: number;
