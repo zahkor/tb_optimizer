@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5", // Apps Script is based on ES5 or ES6
+        "lib": ["es2015"], // Basic ES features
+        "module": "commonjs", // Apps Script does not use modules
+        "strict": true,
+        "noImplicitAny": false,
+        "rootDir": "./", // Your TS files
+        "outDir": "dist" // Output folder for JS files
+    }
+}
