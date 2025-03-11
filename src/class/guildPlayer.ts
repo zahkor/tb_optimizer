@@ -1,4 +1,4 @@
- class GuildPlayer {
+class GuildPlayer {
     data: PlayerProfile = new PlayerProfile();
     units: Unit[] = [];
 
@@ -7,7 +7,7 @@
     }
 }
 
- class PlayerProfile {
+class PlayerProfile {
     allyCode!: number;
     arenaLeaderBaseId!: string;
     arenaRank!: number;
@@ -56,7 +56,7 @@
     }
 }
 
- class Arena {
+class Arena {
     rank!: number;
     leader!: string;
     members!: string[];
@@ -66,7 +66,7 @@
     }
 }
 
- class FleetArena {
+class FleetArena {
     rank!: number;
     leader!: string;
     members!: string[];
@@ -77,7 +77,7 @@
     }
 }
 
- class Unit {
+class Unit {
     data!: UnitData;
 
     constructor(init?: Partial<Unit>) {
@@ -85,7 +85,7 @@
     }
 }
 
- class UnitData {
+class UnitData {
     base_id!: string;
     name!: string;
     gearLevel!: number;
@@ -101,7 +101,7 @@
     abilityData!: Ability[];
     modSetIds!: number[];
     combatType!: number;
-    relicTier!: number | null;
+    relic_tier!: number | null;
     hasUltimate!: boolean;
     isGalacticLegend!: boolean;
 
@@ -110,7 +110,7 @@
     }
 }
 
- class GearItem {
+class GearItem {
     slot!: number;
     isObtained!: boolean;
     baseId!: string;
@@ -120,7 +120,7 @@
     }
 }
 
- class Ability {
+class Ability {
     id!: string;
     abilityTier!: number;
     isOmega!: boolean;
@@ -135,3 +135,4 @@
         Object.assign(this, init);
     }
 }
+
